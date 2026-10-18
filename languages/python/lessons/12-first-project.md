@@ -33,7 +33,7 @@ The parenthesized expression supplies IDs one at a time; lesson 16 explains gene
 
 Build in this order: in-memory operations, menu loop, validation, then persistence. Use separate functions for reading a command, changing tasks, loading data, and saving data. On first run, a missing file can mean an empty task list. Invalid existing data should produce an error and stop saving until repaired.
 
-Completion checks: add two tasks, reject an empty title, complete one task by ID, reject an unknown ID, restart, and confirm the tasks survived. Write the results in your progress log. This is a checkpoint: review earlier lessons if you cannot explain your own functions yet.
+Completion checks: add two tasks, reject an empty title, complete one task by ID, reject an unknown ID, restart, and confirm the tasks survived. Include the results when requesting review. This is a checkpoint: review earlier lessons if you cannot explain your own functions yet.
 
 ## Practice exercise
 
@@ -54,7 +54,7 @@ For commands that require arguments, append the arguments described in that ques
 
 ### When your answers are ready
 
-Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 12 answers are ready in `languages/python/practice/lesson_12/`. Please check all five files.” I will review your code and help you correct it before we continue.
+Run every answer and compare it with the checks in its question. Save all five files and tell me: “Lesson 12 answers are ready in `languages/python/practice/lesson_12/`. Please check all five files.” I will review your code and help you correct it before we continue.
 
 ## Five coding questions
 

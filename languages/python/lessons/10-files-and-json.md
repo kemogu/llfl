@@ -51,7 +51,7 @@ For commands that require arguments, append the arguments described in that ques
 
 ### When your answers are ready
 
-Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 10 answers are ready in `languages/python/practice/lesson_10/`. Please check all five files.” I will review your code and help you correct it before we continue.
+Run every answer and compare it with the checks in its question. Save all five files and tell me: “Lesson 10 answers are ready in `languages/python/practice/lesson_10/`. Please check all five files.” I will review your code and help you correct it before we continue.
 
 ## Five coding questions
 

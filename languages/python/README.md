@@ -11,6 +11,6 @@ For every lesson:
 
 Save answers in `practice/lesson_01/question_1.py` through `question_5.py`, using a new numbered folder for each lesson.
 
-The initial pace is two lessons per week for 12 weeks, adjusted to your progress. See the [schedule](SCHEDULE.md) and [progress log](PROGRESS.md).
+The initial pace is two lessons per week for 12 weeks, adjusted to your progress. See the [schedule](SCHEDULE.md).
 
 All 24 lessons include step-by-step practice instructions and five coding questions. **Next up: lesson 1 — Your first Python program.**

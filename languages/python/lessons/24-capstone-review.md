@@ -1,6 +1,6 @@
 # Lesson 24: Capstone review and continued learning
 
-[Previous lesson](23-capstone-build.md) · [Schedule](../SCHEDULE.md) · [Progress log](../PROGRESS.md)
+[Previous lesson](23-capstone-build.md) · [Schedule](../SCHEDULE.md)
 
 **Goal:** Validate, explain, and improve your program using evidence.
 
@@ -50,7 +50,7 @@ For commands that require arguments, append the arguments described in that ques
 
 ### When your answers are ready
 
-Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 24 answers are ready in `languages/python/practice/lesson_24/`. Please check all five files.” I will review your code and help you correct it before we continue.
+Run every answer and compare it with the checks in its question. Save all five files and tell me: “Lesson 24 answers are ready in `languages/python/practice/lesson_24/`. Please check all five files.” I will review your code and help you correct it before we continue.
 
 ## Five coding questions
 
@@ -92,4 +92,4 @@ Run every answer and compare it with the checks in its question. Save all five f
 
 1. In question_5.py, build a short end-to-end demonstration using temporary storage: add, list, complete, reload, and display unfinished tasks.
 2. Add comments explaining inputs, outputs, side effects, one bug you fixed, and one concept you need to practice further.
-3. Run the demo, prepare a five-minute explanation, and record your next project idea in the progress log. Submit all five files and the capstone path for review.
+3. Run the demo, prepare a five-minute explanation, and include your next project idea in your review request. Submit all five files and the capstone path for review.

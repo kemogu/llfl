@@ -52,7 +52,7 @@ The starting pace is **12 weeks, two lessons per week**, with four sessions of a
 | Monday | Learn the first lesson and try its examples. |
 | Tuesday | Write its five answer files and request my review. |
 | Thursday | Correct answers if needed; otherwise start the next lesson. |
-| Saturday | Write the next five answers, request review, and record progress. |
+| Saturday | Write the next five answers and request review. |
 
 These days are suggestions, not fixed appointments. Reviews happen when you return to this chat and ask. Corrections take priority over starting another lesson. If you have less time, use one lesson per week for a 24-week plan. Projects and difficult topics can take extra sessions. Advanced proficiency will require continued practice beyond this course.
 
@@ -86,7 +86,7 @@ Mention anything confusing and include any error you cannot resolve. I will chec
 - **Clarity:** Are names, formatting, and structure understandable?
 - **Relevant edge cases:** Does it handle the inputs required by the question?
 
-For each file, I will report **Complete** or **Needs revision**, explain why, and provide a focused hint or correction. I will not replace your answers unless you ask me to. After your revisions, I will check again. We will track completed lessons in [PROGRESS.md](PROGRESS.md).
+For each file, I will report **Complete** or **Needs revision**, explain why, and provide a focused hint or correction. I will not replace your answers unless you ask me to. After your revisions, I will check again.
 
 ## Current status and next step
 

@@ -7,7 +7,7 @@ This is a flexible 12-week plan starting whenever you are ready. The default is 
 - **Monday — learn:** read the first lesson, type its examples, predict outputs, then run them.
 - **Tuesday — practice:** write five `.py` answers to that lesson's coding questions and request review.
 - **Thursday — learn:** study the second lesson and experiment with its examples.
-- **Saturday — practice and review:** finish its five answer scripts, request review, and update the progress log.
+- **Saturday — practice and review:** finish its five answer scripts and request review.
 
 Move these days to fit your life. If you have only two sessions per week, use a 24-week schedule: spend one week on each lesson. Never double the workload to catch up; shift the remaining weeks instead. Capstone week may expand into several weeks.
 
