@@ -1,0 +1,1 @@
+print("I can fix errors") # print function works with strings and strings need " " signs. the closing quotation mark was missing.
