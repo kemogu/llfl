@@ -90,6 +90,6 @@ For each file, I will report **Complete** or **Needs revision**, explain why, an
 
 ## Current status and next step
 
-This plan is the agreed workflow. The existing 24 lesson files are drafts from the initial course setup; their current theory questions will be changed into five coding questions as we reach each lesson. Existing practice exercises will become optional warm-ups or be incorporated into those five questions.
+This plan is the agreed workflow. All 24 lesson files now include step-by-step practice instructions and five coding questions, each assigned to its own answer file. We will study and review them one lesson at a time.
 
-**Next: lesson 1 — Your first Python program.** We will cover running a `.py` file, `print()`, text, simple calculations, comments, and basic syntax errors. When we continue, I will prepare that lesson's five coding questions before you begin your answer files.
+**Next: lesson 1 — Your first Python program.** We will cover running a `.py` file, `print()`, text, simple calculations, comments, and basic syntax errors. Its five coding questions are ready for you to work through in order.

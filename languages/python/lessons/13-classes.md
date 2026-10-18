@@ -42,14 +42,63 @@ JSON does not automatically serialize this Task object. Add an explicit conversi
 
 ## Practice exercise
 
-Create a BankAccount exercise class using integer cents, with deposit and withdraw methods. Reject nonpositive amounts and withdrawals beyond the balance. Use fictional data only; test two independent instances.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_13/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. What is the difference between a class and an instance?
-2. What does self refer to?
-3. What is __init__ responsible for?
-4. Why is a mutable class attribute risky for per-instance data?
-5. When might a function and dictionary be simpler than a class?
+```bash
+python3 languages/python/practice/lesson_13/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 13 answers are ready in `languages/python/practice/lesson_13/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Create an account
+
+**Answer file:** `question_1.py`
+
+1. Create account.py beside your answer files with a BankAccount class whose instance balance_cents starts at zero.
+2. In question_1.py, create two fictional accounts and print both balances.
+3. Verify both begin at zero and the balance is stored on each instance.
+
+### Question 2: Deposit money
+
+**Answer file:** `question_2.py`
+
+1. Add deposit(amount_cents) to the class, rejecting nonpositive amounts with ValueError; assume integer amounts.
+2. In question_2.py, deposit 1000 cents and catch attempts to deposit 0 and -100.
+3. Check that the final balance remains 1000 after the rejected deposits.
+
+### Question 3: Withdraw money
+
+**Answer file:** `question_3.py`
+
+1. Add withdraw(amount_cents), rejecting nonpositive amounts and amounts larger than the balance.
+2. In question_3.py, deposit 1000, withdraw 300, and attempt to withdraw 800.
+3. Catch the error and verify that the final balance is 700 cents.
+
+### Question 4: Check independent instances
+
+**Answer file:** `question_4.py`
+
+1. In question_4.py, create two accounts.
+2. Deposit 500 into the first and 200 into the second; withdraw 100 from the first.
+3. Print both balances and check for 400 and 200, demonstrating that one account does not change the other.
+
+### Question 5: Exercise boundary cases
+
+**Answer file:** `question_5.py`
+
+1. In question_5.py, deposit 500 and withdraw exactly 500.
+2. Try another withdrawal of 1 and withdrawals of 0 and -1, catching their errors.
+3. Check that the balance remains zero after every rejected operation and print a clear result for each attempt.

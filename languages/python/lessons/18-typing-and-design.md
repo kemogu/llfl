@@ -46,14 +46,63 @@ Run the example normally, then inspect the annotations in your editor. A dedicat
 
 ## Practice exercise
 
-Annotate the public functions in your task tracker. Decide how searching for a missing task is represented: None or a documented exception. Update callers and tests to match that contract.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_18/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. What can type hints communicate?
-2. Does Python automatically reject every wrong argument type?
-3. What does Optional[float] mean?
-4. How does a Protocol describe an interface?
-5. Why is validating loaded JSON still necessary in annotated code?
+```bash
+python3 languages/python/practice/lesson_18/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 18 answers are ready in `languages/python/practice/lesson_18/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Annotate a calculation
+
+**Answer file:** `question_1.py`
+
+1. Define average(scores: list[float]) -> Optional[float], returning None for an empty list.
+2. Print the results for [80.0, 90.0] and [].
+3. Check for 85.0 and None and include the Optional import.
+
+### Question 2: Handle an optional result
+
+**Answer file:** `question_2.py`
+
+1. Include your average function and call it with an empty list.
+2. Check for None before formatting a numeric result, printing No scores when absent.
+3. Repeat with [80.0, 90.0] and check for a formatted numeric average without an error.
+
+### Question 3: Describe an interface
+
+**Answer file:** `question_3.py`
+
+1. Define a Reporter Protocol with write(message: str) -> None and a ConsoleReporter implementing that method.
+2. Write an annotated function accepting a Reporter and use it to report an average.
+3. Run with ConsoleReporter and check the message appears without requiring inheritance from Reporter.
+
+### Question 4: Define a lookup contract
+
+**Answer file:** `question_4.py`
+
+1. Use a Task dataclass and define find_task(tasks: list[Task], task_id: int) -> Optional[Task].
+2. Search sample tasks for one existing ID and one missing ID, checking for None in the caller.
+3. Print the matching title for the existing ID and a clear missing message for the absent one.
+
+### Question 5: Validate external data
+
+**Answer file:** `question_5.py`
+
+1. Write an annotated function accepting an object and validating that it is a task dictionary with integer id, string title, and boolean done.
+2. Reject bad records with ValueError; reject boolean IDs too, since bool is a subclass of int. Use type(value) is int when an exact integer is required.
+3. Demonstrate a valid record, a list, and a record with a string ID. Check that only the valid record passes, and note that annotations alone do not perform these checks.

@@ -38,14 +38,63 @@ Avoid returning a generator that depends on a file you have already closed. Keep
 
 ## Practice exercise
 
-Write a generator that yields only nonempty stripped lines from a supplied iterable of strings. Feed it a list first, then consume it within a with block reading a practice text file.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_16/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. What is the difference between an iterable and an iterator?
-2. What happens when an iterator is exhausted?
-3. How does yield differ from return?
-4. Why does the second list(totals) call produce an empty list?
-5. When can a generator reduce memory use compared with a list?
+```bash
+python3 languages/python/practice/lesson_16/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 16 answers are ready in `languages/python/practice/lesson_16/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Consume an iterator
+
+**Answer file:** `question_1.py`
+
+1. Create an iterator from [10, 20] and call next() twice, printing each result.
+2. Call next() a third time inside try/except StopIteration.
+3. Check that the output shows 10, 20, then your exhausted message.
+
+### Question 2: Yield clean lines
+
+**Answer file:** `question_2.py`
+
+1. Define clean_lines(lines) to strip each input string and yield it only if nonempty.
+2. Consume it using a for loop with [" Ada ", "", "  ", " Grace\n"].
+3. Check that only Ada and Grace are printed.
+
+### Question 3: Observe exhaustion
+
+**Answer file:** `question_3.py`
+
+1. Define or copy clean_lines() and create one generator from two nonempty strings.
+2. Print list(generator) twice, using the same generator object.
+3. Check that the first list has two values and the second is empty; explain why in a comment.
+
+### Question 4: Read a file lazily
+
+**Answer file:** `question_4.py`
+
+1. Create lines.txt in this lesson folder containing two names and two blank or whitespace-only lines.
+2. Open it with with and iterate through clean_lines(file) inside that block.
+3. Check that only the two names appear and that you do not load the whole file with read() or readlines().
+
+### Question 5: Calculate running totals
+
+**Answer file:** `question_5.py`
+
+1. Write a generator that accumulates numbers and yields the total after each number.
+2. Consume it with [2, 3, 5] and then with an empty list.
+3. Check for results [2, 5, 10] and [] respectively, collecting into lists only for these small demonstrations.

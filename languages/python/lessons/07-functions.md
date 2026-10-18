@@ -39,14 +39,63 @@ Keep each function focused. Separating calculation from `input()` and `print()` 
 
 ## Practice exercise
 
-Write total_cents(price_cents, quantity) and format_receipt(name, total). Keep input and printing outside both functions. Call each with several different arguments.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_07/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. What is the difference between a parameter and an argument?
-2. How does return differ from print?
-3. What does a function return when it reaches the end without return?
-4. Why is a list used as a default argument risky?
-5. Why separate user input from calculation functions?
+```bash
+python3 languages/python/practice/lesson_07/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 7 answers are ready in `languages/python/practice/lesson_07/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Return a calculation
+
+**Answer file:** `question_1.py`
+
+1. Define total_cents(price_cents, quantity) to return their product.
+2. Call it outside the function and print its result.
+3. Check that arguments 250 and 3 produce 750, and 250 and 0 produce 0.
+
+### Question 2: Return formatted text
+
+**Answer file:** `question_2.py`
+
+1. Define format_receipt(name, total) to return a string containing the name and total in cents.
+2. Call the function and print its returned string outside the function.
+3. Check that Notebook and 750 appear in the output and that the function itself does not print.
+
+### Question 3: Combine functions
+
+**Answer file:** `question_3.py`
+
+1. Include your two functions from questions 1 and 2.
+2. Calculate a total, pass it to format_receipt(), and print the returned receipt.
+3. Try Notebook at 250 cents with quantity 3, then Pen at 100 cents with quantity 2; expect totals of 750 and 200.
+
+### Question 4: Use a default argument
+
+**Answer file:** `question_4.py`
+
+1. Define greet(name, greeting="Hello") and return the greeting text.
+2. Call it once using the default and once supplying greeting="Welcome".
+3. Print the returned values and verify that both include the supplied name and the appropriate greeting.
+
+### Question 5: Separate input from logic
+
+**Answer file:** `question_5.py`
+
+1. Include the two receipt functions and keep input() calls outside them.
+2. Ask for a product name, integer unit price in cents, and integer quantity; use the functions to produce a receipt.
+3. Run with Notebook, 250, and 3 and check the total is 750 cents. Assume valid nonnegative integers for now.

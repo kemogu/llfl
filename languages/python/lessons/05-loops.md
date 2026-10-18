@@ -43,14 +43,63 @@ Trace loops on paper: record each value of the loop variable and accumulator. Th
 
 ## Practice exercise
 
-Ask for a positive integer n. Calculate the sum from 1 through n using a loop, then print a multiplication table for n from 1 through 10. Reject nonpositive integers.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_05/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. Which values does range(2, 7) produce?
-2. What is an accumulator?
-3. How do break and continue differ?
-4. Why would a while loop become infinite?
-5. How would you include n when summing with range()?
+```bash
+python3 languages/python/practice/lesson_05/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 5 answers are ready in `languages/python/practice/lesson_05/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Print a sequence
+
+**Answer file:** `question_1.py`
+
+1. Use a for loop and range() to print the integers from 1 through 5.
+2. Print each number on a separate line.
+3. Verify that 1 and 5 are included and 6 is not.
+
+### Question 2: Accumulate a sum
+
+**Answer file:** `question_2.py`
+
+1. Set n = 5 and initialize a total to zero.
+2. Use a loop to add every integer from 1 through n; do not use sum().
+3. Print 15. Change n to 1 and verify that the result is 1.
+
+### Question 3: Make a multiplication table
+
+**Answer file:** `question_3.py`
+
+1. Read a positive integer n; assume valid input for this question.
+2. Loop over multipliers 1 through 10 and print one labeled multiplication per line.
+3. For n = 3, check that the first line represents 3 * 1 = 3 and the last represents 3 * 10 = 30.
+
+### Question 4: Use a while loop
+
+**Answer file:** `question_4.py`
+
+1. Set attempts = 3.
+2. Use while to print the current value and decrease it by one each iteration.
+3. Check that the output is 3, 2, 1 and the program then stops.
+
+### Question 5: Validate and combine
+
+**Answer file:** `question_5.py`
+
+1. Read an integer n. If n is nonpositive, print an error and skip the calculations.
+2. Otherwise use loops to calculate the sum from 1 through n and print its multiplication table from 1 through 10.
+3. Test n values 0, -2, 1, and 5. For 5, the sum should be 15 and the last table result 50. Nonnumeric input handling is not required yet.

@@ -45,14 +45,63 @@ This course uses the standard library, so no third-party installation is require
 
 ## Practice exercise
 
-Move your receipt calculation functions into receipt.py. Import them from a separate main script. Add a main guard and confirm importing the script does not ask for input or print a receipt.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_11/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. What is a module?
-2. What does the __name__ main guard prevent?
-3. Why can naming your file json.py cause trouble?
-4. What problem does a virtual environment solve?
-5. Why use python -m pip with the intended interpreter?
+```bash
+python3 languages/python/practice/lesson_11/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 11 answers are ready in `languages/python/practice/lesson_11/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Extract a module
+
+**Answer file:** `question_1.py`
+
+1. Create receipt.py beside your answer files and move total_cents() and format_receipt() into it.
+2. In question_1.py, import the functions and print a receipt for Notebook at 250 cents with quantity 3.
+3. Run the answer file and verify a total of 750 cents.
+
+### Question 2: Use a main guard
+
+**Answer file:** `question_2.py`
+
+1. In question_2.py, import receipt functions and define main() to print a sample receipt.
+2. Call main() only inside an if __name__ == "__main__" guard.
+3. Run question_2.py directly and verify that exactly one receipt appears.
+
+### Question 3: Check import behavior
+
+**Answer file:** `question_3.py`
+
+1. In question_3.py, import question_2 and then print Import complete.
+2. Run question_3.py without calling question_2.main().
+3. Check that only Import complete appears, with no receipt or input prompt.
+
+### Question 4: Inspect your interpreter
+
+**Answer file:** `question_4.py`
+
+1. Create the virtual environment using the command in the lesson, then activate it.
+2. In question_4.py, import sys and print sys.executable, sys.prefix, and sys.base_prefix.
+3. Run with the environment's Python. Verify the executable points into .venv and the two prefixes differ.
+
+### Question 5: Build a small entry point
+
+**Answer file:** `question_5.py`
+
+1. Import the receipt functions and define main() to ask for a name, integer price, and quantity.
+2. Keep all input and printing inside main(), and guard its call.
+3. Run with Notebook, 250, and 3 to get 750 cents; then temporarily import question_5 from question_3 and verify importing does not prompt or print.

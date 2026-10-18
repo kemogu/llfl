@@ -33,14 +33,63 @@ This course introduces advanced Python concepts; expertise comes from applying t
 
 ## Practice exercise
 
-Complete the review checklist, fix one design issue without changing intended behavior, and write a retrospective. Prepare a five-minute explanation of the project and send your code plus unanswered questions for review.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_24/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. Which evidence shows your project is usable from a fresh start?
-2. What is the difference between refactoring and adding behavior?
-3. How did your tests protect the code during a refactor?
-4. Which Python concept is still hardest for you, and what exercise would target it?
-5. What will your next project be, and which concrete skills will it practice?
+```bash
+python3 languages/python/practice/lesson_24/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 24 answers are ready in `languages/python/practice/lesson_24/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Verify a fresh start
+
+**Answer file:** `question_1.py`
+
+1. Copy or reuse your completed capstone modules without changing working user data.
+2. In question_1.py, write a test that creates a new temporary storage location and verifies that listing tasks starts empty.
+3. Run the test and manually follow the README from a fresh terminal; record any missing setup instructions in comments.
+
+### Question 2: Verify the full lifecycle
+
+**Answer file:** `question_2.py`
+
+1. In question_2.py, write a test that adds two tasks, completes one, and checks the unfinished filter.
+2. Recreate the service using the same temporary storage and repeat the checks.
+3. Assert that the same IDs, titles, and states survive the reload.
+
+### Question 3: Verify failure behavior
+
+**Answer file:** `question_3.py`
+
+1. In question_3.py, add tests for an empty title, an unknown ID, and invalid storage input in a temporary location.
+2. Check that failures are reported and valid existing records are not overwritten. For SQLite, use a separate non-database file as the invalid input.
+3. Run the tests and confirm their cleanup leaves your normal capstone data unchanged.
+
+### Question 4: Protect a refactor
+
+**Answer file:** `question_4.py`
+
+1. In question_4.py, add a regression test for a behavior affected by one small proposed refactor, such as extracting duplicated title validation.
+2. Run it before the refactor, make the change, and run it again with the other tests.
+3. Check that intended behavior remains the same and explain the simplification in a comment.
+
+### Question 5: Demonstrate and reflect
+
+**Answer file:** `question_5.py`
+
+1. In question_5.py, build a short end-to-end demonstration using temporary storage: add, list, complete, reload, and display unfinished tasks.
+2. Add comments explaining inputs, outputs, side effects, one bug you fixed, and one concept you need to practice further.
+3. Run the demo, prepare a five-minute explanation, and record your next project idea in the progress log. Submit all five files and the capstone path for review.

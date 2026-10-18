@@ -34,14 +34,63 @@ Loading can fail with `FileNotFoundError` or `json.JSONDecodeError`. Even valid 
 
 ## Practice exercise
 
-Save three vocabulary words and their meanings to a new JSON file in practice/. Load them and print a quiz prompt for each word. Report missing and malformed files separately.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_10/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. What does a relative path depend on?
-2. Why use with when opening a file?
-3. How do modes "w" and "a" differ?
-4. Which exception can invalid JSON raise?
-5. Why must you validate data even after JSON parsing succeeds?
+```bash
+python3 languages/python/practice/lesson_10/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 10 answers are ready in `languages/python/practice/lesson_10/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Save vocabulary
+
+**Answer file:** `question_1.py`
+
+1. Create a dictionary mapping python to programming language, loop to repetition, and variable to name for a value.
+2. Write it as UTF-8 JSON to vocabulary.json inside this lesson's practice folder using with.
+3. Run this script once and open the JSON file to confirm all three entries were saved. Rerunning intentionally replaces this practice file.
+
+### Question 2: Load vocabulary
+
+**Answer file:** `question_2.py`
+
+1. Read the vocabulary.json created in question 1 without writing to it.
+2. Print each word and meaning.
+3. Check that all three entries appear. Keep loading separate from saving so later failure checks are meaningful.
+
+### Question 3: Print quiz prompts
+
+**Answer file:** `question_3.py`
+
+1. Load the vocabulary dictionary.
+2. Loop over the words and print What does WORD mean? with each actual word substituted.
+3. Verify that three prompts appear without revealing their meanings. Collecting answers is optional.
+
+### Question 4: Report load failures
+
+**Answer file:** `question_4.py`
+
+1. Load a user-supplied file path and catch FileNotFoundError and json.JSONDecodeError separately.
+2. Create a separate broken.json practice file containing only {, and also choose a path that does not exist.
+3. Run with each path and with the valid vocabulary file; check for distinct error messages and successful loading respectively. Do not overwrite any input file.
+
+### Question 5: Validate the structure
+
+**Answer file:** `question_5.py`
+
+1. Load JSON and check that the result is a dictionary with string keys and string values.
+2. Reject unsuitable data with a clear message instead of using it as vocabulary.
+3. Test the valid file, a separate file containing [], and one containing {"word": 3}. Only the valid vocabulary file should be accepted.

@@ -38,14 +38,63 @@ for position, student in enumerate(ranked, start=1):
 
 ## Practice exercise
 
-From a list of student dictionaries, keep those scoring at least 60, sort them by score descending, and print a numbered ranking. Keep the original list unchanged.
+Complete the five coding questions below. You will write the answers; the examples above are for studying.
 
-Before moving on, run your work, explain it in your own words, and record one thing you learned in [your progress log](../PROGRESS.md).
+### Set up your answer files
 
-## Review questions
+1. In your editor, create the folder `languages/python/practice/lesson_08/`.
+2. Inside it, create `question_1.py`, `question_2.py`, `question_3.py`, `question_4.py`, and `question_5.py`.
+3. Write each answer in its matching file. Work in question order; when a question needs an earlier function, copy it or use the shared module explicitly requested below.
+4. Open a terminal at the repository root and run the first answer with the command below. Change the final filename to run each of the other answers. Use `python` or `py` instead of `python3` if needed on your system.
 
-1. What does [n * 2 for n in range(4)] produce?
-2. When is a regular loop clearer than a comprehension?
-3. What does enumerate() provide?
-4. How do sorted() and list.sort() differ?
-5. What happens when zip() receives inputs of different lengths by default?
+```bash
+python3 languages/python/practice/lesson_08/question_1.py
+```
+
+For commands that require arguments, append the arguments described in that question. Unless instructed otherwise, keep input files and generated data inside this lesson's practice folder; paths in scripts run from the repository root must include that folder.
+
+### When your answers are ready
+
+Run every answer and compare it with the checks in its question. Save all five files, record your progress in [PROGRESS.md](../PROGRESS.md), and tell me: “Lesson 8 answers are ready in `languages/python/practice/lesson_08/`. Please check all five files.” I will review your code and help you correct it before we continue.
+
+## Five coding questions
+
+### Question 1: Filter passing students
+
+**Answer file:** `question_1.py`
+
+1. Create records for Ada:90, Linus:55, Grace:98, and Alan:90, using name and score keys.
+2. Use a list comprehension to keep records with scores of at least 60.
+3. Print the names and check that Linus is excluded and the other three remain.
+
+### Question 2: Sort by score
+
+**Answer file:** `question_2.py`
+
+1. Recreate the records from question 1.
+2. Use sorted() and a key function to order records by descending score.
+3. Print the names; expect Grace, Ada, Alan, Linus. Ada should remain before Alan because their scores tie.
+
+### Question 3: Number a ranking
+
+**Answer file:** `question_3.py`
+
+1. Filter and sort the same records.
+2. Use enumerate(..., start=1) to print rank, name, and score.
+3. Check that Grace is ranked 1, Ada 2, and Alan 3.
+
+### Question 4: Build a dictionary
+
+**Answer file:** `question_4.py`
+
+1. Create the word list ["cat", "python", "code"].
+2. Use a dictionary comprehension mapping each word to its length.
+3. Print the result and check for cat:3, python:6, and code:4.
+
+### Question 5: Preserve the original
+
+**Answer file:** `question_5.py`
+
+1. Recreate the student records and store their original name order in a separate list.
+2. Build a passing-student ranking without sorting or editing the original list in place.
+3. Print the ranking and the original name order afterward; check that the original remains Ada, Linus, Grace, Alan.
